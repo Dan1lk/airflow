@@ -6,7 +6,7 @@ from airflow.operators.bash import BashOperator
 default_args = {
     "owner": "etl_user",
     "depends_on_past": False,
-    "start_date": datetime(2024, 6, 10),
+    "start_date": datetime(2024, 6, 12),
     #"retry_delay": timedelta(minutes=0.1)
 }
 
