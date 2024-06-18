@@ -1,0 +1,1 @@
+print('Hellow, world from task 1')
