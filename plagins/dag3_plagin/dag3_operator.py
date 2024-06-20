@@ -1,10 +1,7 @@
 from airflow.models.baseoperator import BaseOperator
 from airflow.models.connection import Connection
-import requests
-import pandas
 from sqlalchemy.orm import Session, declarative_base
-from datetime import datetime
-from sqlalchemy import create_engine, Column, Integer, Float, Date, String, TIMESTAMP
+from sqlalchemy import create_engine, Column, Integer, String
 Base = declarative_base()
 cities_list = ['Казань', 'Москва', 'Санкт-Петербург', 'Чебоксары', 'Сочи', 'Владивосток', 'Екатеринбург', 'Пекин']
 weather_list = [['Дата', 'Город', 'Температура', 'Скорость ветра']]
